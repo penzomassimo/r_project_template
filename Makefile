@@ -1,7 +1,7 @@
 
 install_packages:
 	@echo --- Installing project packages ---
-	Rscript -e 'install.packages(c("ggplot2", "reshape", "vegan"))'
+	Rscript -e 'install.packages(c("ggplot2", "logging", "agricolae"), repos="http://cran.rstudio.com/")'
 
 init:
 	@echo --- Simulating data ---

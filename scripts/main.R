@@ -10,7 +10,7 @@ library(agricolae)
 library(vcd)
 
 # Loading helper scripts
-source("./r_scripts/helpers.R")
+source("./scripts/helpers.R")
 
 # Loading experimental data
 df = read.csv('./data/raw_data_tensile_strength.csv')
