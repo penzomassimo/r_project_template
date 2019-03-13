@@ -1,0 +1,54 @@
+---
+title: "One-Factor Analysis of Variance"
+author: "Massimo Penzo"
+date: "December 27, 2018"
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: '2'
+  html_document:
+    highlight: monochrome
+    number_sections: yes
+    theme: simplex
+    toc: yes
+    toc_depth: 2
+    toc_float: yes
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+
+This is a paragraph in an R Markdown document.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit nec leo quis vestibulum. Ut rhoncus dui vel risus condimentum lacinia. Aliquam ac elementum arcu. Donec at lacus quam. Phasellus nec velit aliquet, venenatis velit quis, tempus sem. Fusce ultricies pharetra malesuada. Suspendisse potenti. Nulla facilisi. Phasellus ut aliquam turpis. Proin id lectus fringilla, sodales quam at, tincidunt quam. Duis molestie purus mauris, nec eleifend turpis volutpat eu.
+
+Fusce non justo a risus sagittis sodales vitae ac felis. Etiam ut dolor a velit semper porta. Pellentesque auctor lorem a nibh congue commodo. Duis ullamcorper congue tortor, in cursus felis tincidunt vitae. Aliquam at tellus libero. Sed tristique, magna quis eleifend auctor, nibh ex egestas metus, consequat bibendum nunc diam quis neque. Quisque dui tortor, imperdiet eu consequat a, varius accumsan lectus. Maecenas sollicitudin accumsan leo congue molestie. Suspendisse finibus nunc sed massa tempus, pharetra aliquet sapien porta. Vivamus rutrum, ligula non lacinia consectetur, nunc lorem dapibus tellus, a sollicitudin metus lacus in felis. In arcu mauris, viverra a erat finibus, faucibus lobortis urna. Sed at ante ut risus pellentesque sollicitudin quis et quam. Mauris nec pretium nisl. Nam dictum nec nibh ac vestibulum. Aenean semper placerat enim vel dictum.
+
+$$X = \begin{bmatrix}1 & x_{1}\\
+1 & x_{2}\\
+1 & x_{3}
+\end{bmatrix}$$
+
+Below is a code chunk:
+
+```{r}
+fit = lm(dist ~ speed, data = cars)
+b   = coef(fit)
+plot(cars)
+abline(fit)
+```
+
+The slope of the regression is `r b[1]`.
+
+
+## Content {.tabset}
+### test 1
+### test 2
+KMDLDKDLKMDLKDMLDKMDLKM
+
+
+## Section 3
+## tile 1
+## tile 2
+
