@@ -6,11 +6,11 @@ install_packages:
 init:
 	@echo --- Simulating data ---
 	# Rscript --version
-	Rscript --verbose './r_scripts/main.R'
+	Rscript --verbose './scripts/main.R'
 	
 knit_all:
 	@echo --- Generating documents ---
-	Rscript -e "library(knitr); knit('./r_markdown/myfile.Rmd')"
+	Rscript -e "library(knitr); knit('./markdown/myfile.Rmd')"
 	
 clean:
 	rm -rf ./plots/*
