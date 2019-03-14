@@ -66,7 +66,7 @@ fligner.test(response ~ factor, df)
 
 # Pair-wise comparisons - Tukey HSD
 TukeyHSD(model, conf.level = 0.95)
-plot(TukeyHSD(model, conf.level = 0.99),las = 1, col = "red")
+# plot(TukeyHSD(model, conf.level = 0.99),las = 1, col = "red")
 
 # Pair-wise comparisons - Fisher LSD
 
