@@ -3,9 +3,6 @@ title: "One-Factor Analysis of Variance"
 author: "Massimo Penzo"
 date: "December 27, 2018"
 output:
-  pdf_document:
-    toc: yes
-    toc_depth: '2'
   html_document:
     highlight: monochrome
     number_sections: yes

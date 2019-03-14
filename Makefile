@@ -1,7 +1,7 @@
 
 install_packages:
 	@echo --- Installing project packages ---
-	Rscript -e 'install.packages(c("ggplot2", "logging", "agricolae", "devtools"), repos="http://cran.rstudio.com/")'
+	Rscript -e 'install.packages(c("ggplot2", "logging", "testthat", "devtools"), repos="http://cran.rstudio.com/")'
 
 init:
 	@echo --- Simulating data ---
@@ -10,13 +10,13 @@ init:
 	
 knit_all:
 	@echo --- Generating documents ---
-	Rscript -e "library(knitr); knit('./markdown/myfile.Rmd')"
+	Rscript -e "library(knitr); knit('./markdown/anova.Rmd', './docs/test.html')"
 	
 clean:
 	rm -rf ./plots/*
 
 foo.html: 
-	Rscript -e 'rmarkdown::render("foo.Rmd")'
+	Rscript -e 'rmarkdown::render("./docs/test.html")'
 
 run_tests:
 	@echo --- Running tests ---
