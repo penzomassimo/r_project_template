@@ -1,7 +1,7 @@
 
 install_packages:
 	@echo --- Installing project packages ---
-	Rscript -e 'install.packages(c("ggplot2", "logging", "agricolae"), repos="http://cran.rstudio.com/")'
+	Rscript -e 'install.packages(c("ggplot2", "logging", "agricolae", "devtools"), repos="http://cran.rstudio.com/")'
 
 init:
 	@echo --- Simulating data ---
@@ -17,4 +17,8 @@ clean:
 
 foo.html: 
 	Rscript -e 'rmarkdown::render("foo.Rmd")'
+
+run_tests:
+	@echo --- Running tests ---
+	Rscript --verbose './tests/run_tests.R'
 

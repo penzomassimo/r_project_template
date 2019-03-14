@@ -23,3 +23,16 @@ CalculateSampleCovariance <- function(x, y, verbose = TRUE) {
     cat("Covariance = ", round(covariance, 4), ".\n", sep = "")
   return(covariance)
 } 
+
+
+
+Fibonacci <- function(n){
+    a <- 0
+    b <- 1
+    for (i in 1:n){
+        temp <- b
+        b <- a
+        a <- a + temp
+    }
+    return(a)
+}
